@@ -1,0 +1,1790 @@
+/* fonts for hele nettsiden */
+
+@font-face {
+  font-family: Magic-Retro;
+  src: url("fonts/Magic\ Retro.ttf");
+}
+
+@font-face {
+  font-family: SF-Pro Bold;
+  src: url("fonts/SF-Pro-Display-Bold.otf");
+}
+
+@font-face {
+  font-family: SF-Pro Regular;
+  src: url("fonts/SF-Pro-Display-Regular.otf");
+}
+
+@font-face {
+  font-family: SF-Pro Light;
+  src: url("fonts/SF-Pro-Display-Light.otf");
+}
+
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+body {
+  background: #0d0d0d;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scrolling banner css */
+
+.scrolling-banner {
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.scrolling-banner h1 {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(17px, 2vw, 22px);
+  display: flex;
+  align-items: center;
+}
+
+.scrolling-banner img {
+  padding: 0 20px;
+  width: 100px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Adjust the starting position for smoother animation start */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%) translateX(calc(-100% + 100vw)); /* Adjust starting position */
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*/////////////////////////////////////*/
+
+/* Choose Groups css */
+
+.choose-grupper-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.choose-grupper-wrapper {
+  max-width: 901px;
+  padding: 35px;
+}
+
+.choose-grupper-wrapper a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.choose-grupper-wrapper hr {
+  opacity: 50%;
+}
+
+.choose-grupper-wrapper h1:hover {
+  transform: translateX(2%);
+}
+
+.choose-grupper-wrapper h1 {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(25px, 3vw, 50px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 15px 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.choose-grupper-wrapper p {
+  padding: 10px 10px;
+  color: #fff;
+  font-size: clamp(12px, 2vw, 14px);
+  background-color: #2c2c2c;
+  width: 110px;
+  font-family: SF-Pro Regular;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.choose-grupper-wrapper h4 {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+.change-group-button {
+  background: #fff;
+  color: #000 !important;
+  padding: 2px 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+/* Css for back button om oss */
+
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.back-button p:hover {
+  padding-left: 10%;
+}
+
+.back-button a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-button p {
+  color: #fff;
+  text-align: center;
+  font-family: SF-Pro Regular;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+}
+
+.back-button h1 {
+  color: #fff;
+  text-align: center;
+  font-family: SF-Pro Regular;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+}
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+/* Css for box reveal grupper siden */
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+/* Css for nav wrapper hjemme siden  */
+
+.nav-snc {
+  background-image: url(images/snc-bg-nav.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  padding-bottom: 100px;
+}
+
+nav {
+  background-image: url(images/nav-bg-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  padding-bottom: 100px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+}
+
+.nav img {
+  padding: 25px 0;
+  width: 100%;
+  max-width: 200px;
+}
+
+.nav h1 {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 247.38%;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+  transform: scale(90%);
+}
+
+.nav-res-button {
+  display: none;
+}
+
+/* .nav-res-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+  font-family: SF-Pro Regular;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer
+} */
+
+.bar {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px 0;
+  border-radius: 4px;
+  transition: transform 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.bar.active:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.bar.active:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.bar-close {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.bar-close:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.bar-close:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.nav-text-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: clamp(70vh + 10vw, 80vh);
+}
+
+.nav-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  max-width: 1820px;
+  height: 600px;
+  padding: 25px 50px;
+}
+
+.snc-big-text {
+  font-size: clamp(10px, 5vw, 125px) !important;
+  margin-bottom: -5% !important;
+}
+
+.nav-text-wrapper h1 {
+  font-size: clamp(10px, 8.2vw, 155px);
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 247.38%;
+  text-transform: uppercase;
+  margin-top: -5%;
+  margin-bottom: -7%;
+}
+
+.nav-text-wrapper p {
+  color: #fff;
+  text-align: center;
+  font-family: SF-Pro Regular;
+  font-size: clamp(18px, 2vw, 22px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  max-width: 850px;
+  text-wrap: balance;
+}
+
+#flex-grupper-link {
+  text-decoration: none;
+}
+
+.nav-text-wrapper button {
+  display: flex;
+  padding: 17px 25px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-family: SF-Pro Regular;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+  font-size: clamp(15px, 2vw, 20px);
+}
+
+.nav-text-wrapper button:hover {
+  transform: scale(95%);
+}
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+/* Css for res menu  */
+
+.res-menu-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  height: 100vh;
+  z-index: 100;
+}
+
+.res-menu {
+  padding: 25px;
+}
+
+.res-menu-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.res-menu-nav img {
+  width: 100%;
+  max-width: 30%;
+  cursor: pointer;
+}
+
+.res-menu-nav svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.res-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+  font-family: SF-Pro Regular;
+  font-size: clamp(18px, 3vw, 22px);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border-radius: 4px;
+}
+
+.res-links:hover {
+  background-color: #f2f2f2;
+}
+
+.res-links svg {
+  width: 15px;
+  height: 15px;
+}
+
+.res-menu-link a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+/* Css for om oss siden  */
+
+.omOss-wrapper-flex {
+  background-image: url(images/om-oss-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.omOss-upper-nav img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.omOss-upper-nav p {
+  color: #fff;
+  text-align: center;
+  font-family: SF-Pro Bold;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+
+.omOss-big-tekst {
+  display: flex;
+  justify-content: center;
+}
+
+.omOss-big-tekst h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Magic-Retro;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+
+.omOss-big-tekst h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Magic-Retro;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+
+.omOss-button {
+  display: flex;
+  justify-content: center;
+}
+
+.omOss-button button {
+  background: 0 0;
+  width: 102px;
+  height: 44px;
+  flex-shrink: 0;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-family: SF-Pro Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+.omOss-button button:hover {
+  transform: scaleX(95%);
+}
+
+.omOss-text {
+  display: flex;
+  justify-content: center;
+  padding: 25px 50px;
+}
+
+.omOss-text p {
+  color: #fff;
+  text-align: center;
+  font-family: SF-Pro Regular;
+  font-size: clamp(16px, 1.1vw, 19px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  text-transform: uppercase;
+  max-width: 1000px;
+  padding: 100px 0;
+  text-wrap: balance;
+}
+
+.vaar-tro-flex {
+  display: flex;
+  justify-content: center;
+  padding: 25px 50px;
+}
+
+.vaar-tro-text {
+  text-align: center;
+}
+
+.vaar-tro-text h1 {
+  font-size: clamp(22px 5vw 36px);
+  font-family: SF-Pro Bold;
+  color: #fff;
+}
+
+.vaar-tro-text p {
+  color: #fff;
+  text-align: center;
+  font-family: SF-Pro Regular;
+  font-size: clamp(16px, 1.1vw, 19px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  text-transform: uppercase;
+  max-width: 1000px;
+  text-wrap: balance;
+}
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+/* Css for klikk grupper hjemme siden  */
+
+.klik-grupper-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.klik-grupper-wrapper {
+  padding: 100px 35px;
+}
+
+.klik-grupper-wrapper h1 {
+  color: #fff;
+  font-size: clamp(36px, 8vw, 50px);
+  /* Set the font size with a clamp function */
+  font-family: SF-Pro Regular;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.klik-grupper-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(10px, 5vw, 35px);
+}
+
+.klik-grupper-box img {
+  width: 100%;
+  max-width: 648px;
+  height: auto;
+  border-radius: 4px;
+  transition: all 250ms ease-in-out;
+}
+
+
+.klik-grupper-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 25px 0;
+}
+
+.klik-grupper-info p {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(14px, 4vw, 22px);
+  /* Set the font size with a clamp function */
+  font-style: normal;
+  line-height: normal;
+  max-width: 846px;
+}
+
+.klik-grupper-info a {
+  text-decoration: none;
+}
+
+.klik-grupper-info button {
+  padding: 20px 30px;
+  background-color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-family: SF-Pro Regular;
+  cursor: pointer;
+  font-size: clamp(14px, 2vw, 16px);
+  transition: all 300ms ease-in-out;
+}
+
+.klik-grupper-info button:hover {
+  transform: scale(95%);
+}
+
+.klik-grupper-info img {
+  transition: all 0.2s ease-in-out;
+}
+
+.klik-grupper-info button:hover img {
+  transform: translateX(6px);
+}
+
+.box-reveal-flex {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 840px;
+  max-width: 100%;
+  margin: auto 0;
+  transition: opacity 0.6s 0.2s;
+  z-index: 100;
+}
+
+.box-reveal-grupper {
+  padding: 5em;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.box-titles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-titles h1 {
+  color: #333;
+  font-family: SF-Pro Regular;
+  font-size: clamp(35px, 6vw, 50px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.box-reveal-grupper p {
+  color: #333;
+  font-family: SF-Pro Regular;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.box-titles i {
+  color: #333;
+  font-size: clamp(20px, 5vw, 30px);
+  cursor: pointer;
+}
+
+.box-reveal-grupper button {
+  padding: 20px 30px;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+  border: none;
+  font-family: SF-Pro Regular;
+  margin: 2% 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.box-reveal-grupper a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+/* Css for Event wrapper hjemme siden  */
+
+.event-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.event-container {
+  width: 100%;
+  max-width: 1317px;
+}
+
+.event-container-name {
+  color: #fff;
+  font-size: clamp(36px, 8vw, 50px);
+  font-family: SF-Pro Regular;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.event-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-title-name {
+  color: #fff;
+  font-size: clamp(22px, 2.5vw, 36px);
+  font-family: SF-Pro Regular;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.event-paragraph {
+  width: clamp(250px, 80vw, 688px);
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(14px, 2vw, 22px);
+  font-style: normal;
+  line-height: normal;
+}
+
+.event-img-container {
+  padding: 0 25px;
+}
+
+.event-button-wrapper {
+  padding: 15px 0;
+}
+
+.event-button {
+  padding: 15px 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: #fff;
+  font-family: SF-Pro Regular;
+  cursor: pointer;
+}
+
+
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+/* Css for youtube wrapper hjemme siden  */
+
+.youtube-flex {
+  padding: 100px 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.youtube-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url(images/youtube-bg.JPG);
+  height: 600px;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1325px;
+  border-radius: 20px;
+}
+
+.youtube-wrapper h1 {
+  font-size: clamp(30px, 4vw, 45px);
+  color: #fff;
+  font-family: SF-Pro Regular;
+  max-width: 600px;
+  padding: 0 50px; /* 0 for top/bottom, 50px for left/right */
+}
+
+.youtube-wrapper p {
+  margin-top: -1%;
+  font-size: clamp(15px, 1.5vw, 24px);
+  color: #fff;
+  font-family: SF-Pro Regular;
+  text-wrap: balance;
+  padding: 0 50px; /* 0 for top/bottom, 50px for left/right */
+  max-width: 600px;
+}
+
+.button-youtube {
+  padding: 0 50px; /* 0 for top/bottom, 50px for left/right */
+}
+
+.youtube-wrapper button {
+  width: 127px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #2c2c2c;
+  color: #fff;
+  text-align: center;
+  font-family: SF-Pro Regular;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 200%;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.youtube-wrapper button:hover {
+  transform: scale(95%);
+}
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+/* Css for kalender wrapper hjemme siden  */
+
+.kalender-container {
+  display: flex;
+  justify-content: center;
+}
+
+.kalender-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 110px 25px;
+}
+
+.kalender-wrapper {
+  width: 100%;
+  max-width: 1317px;
+  display: none;
+}
+
+.kalender-wrapper.active {
+  display: block;
+}
+
+.kalender-nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  align-items: center;
+}
+
+.kalender-nav h1 {
+  color: #fff;
+  text-align: center;
+  font-family: SF-Pro Regular;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.pagination-kalender {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.pagination-kalender p {
+  padding: clamp(15px, 5vw, 20px) clamp(20px, 10vw, 25px);
+  background-color: #171717;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-family: SF-Pro Regular;
+}
+
+.months {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.months p {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #171717;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(13.5px, 2.5vw, 17px);
+  cursor: pointer;
+  text-align: center;
+}
+
+.months a {
+  text-decoration: none;
+}
+
+/* Additional Styles for Swiper */
+
+/* blockade */
+
+.kalender-page-flex {
+  display: flex;
+  padding: min(max(25px, 10%), 55px);
+}
+
+.kalender-page-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.kalender-page-info h1 {
+  color: #fff;
+  font-family: SF-Pro Bold;
+  font-size: clamp(22px, 5vw, 36px);
+  font-style: normal;
+  font-weight: 146;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.kalender-page-info p {
+  max-width: 700px;
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(18px, 2vw, 26px);
+  font-style: normal;
+  font-weight: 84;
+  line-height: normal;
+}
+
+.kalendar-part-two {
+  margin-bottom: 10%;
+}
+
+.kalender-page-details {
+  display: flex;
+  gap: 35px;
+}
+
+.kalender-page-details p {
+  font-size: clamp(14px, 2vw, 26px);
+  font-family: SF-Pro Regular;
+}
+
+.kalender-page-button {
+  padding: 10px 0;
+}
+
+.kalender-page-button button {
+  padding: 12px 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  color: #000;
+  font-family: SF-Pro Regular;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 146;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+/* Css for tjeneste wrapper hjemme/tjenester siden  */
+
+.tjenester-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.tjenester-wrapper {
+  width: 100%;
+  max-width: 1323px;
+  padding: 100px 35px 250px 35px;
+}
+
+.tjenester-page-big-wrapper {
+  width: 100%;
+  max-width: 1830px;
+  padding: 75px 35px;
+}
+
+.tjenester-page-big-wrapper hr {
+  opacity: 35%;
+}
+
+.tjenester-wrapper h1 {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(36px, 8vw, 50px);
+  /* Set the font size with a clamp function */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.tjenester-wrapper hr {
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 35%;
+}
+
+.tjenester-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.tjenester-links:hover {
+  transform: scale(98.5%);
+}
+
+.tjenester-links:hover button {
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+}
+
+.tjenester-links p {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(14px, 3vw, 36px);
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.tjenester-links button {
+  padding: 15px 30px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
+  color: #fff;
+  font-family: SF-Pro Regular;
+  cursor: pointer;
+  font-size: clamp(12px, 1.5vw, 14px);
+}
+
+.tjenester-links a {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tjenester-links a:hover {
+  transform: scale(95%);
+}
+
+.button-wrapper-tjenester {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.button-wrapper-tjenester p {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(14px, 4vw, 22px);
+  /* Set the font size with a clamp function */
+  font-style: normal;
+  line-height: normal;
+  max-width: 500px;
+}
+
+.button-wrapper-tjenester button {
+  padding: 20px 30px;
+  background-color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-family: SF-Pro Regular;
+  cursor: pointer;
+  font-size: clamp(14px, 2vw, 16px);
+  transition: all 300ms ease-in-out;
+}
+
+.button-wrapper-tjenester button:hover {
+  transform: scale(95%);
+}
+
+.button-wrapper-tjenester a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-wrapper-tjenester img {
+  transition: all 0.2s ease-in-out;
+}
+
+.button-wrapper-tjenester button:hover img {
+  transform: translateX(6px);
+}
+
+.tjeneste-page-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.tjeneste-page-wrapper {
+  width: 100%;
+  max-width: 1900px;
+  flex-shrink: 0;
+}
+
+.tjenester-page-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  padding: 50px 35px;
+}
+
+.tjenester-page-info h1 {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(25px, 3vw, 60px);
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.tjenester-page-info p {
+  max-width: 686px;
+  color: #fff;
+  text-align: right;
+  font-family: SF-Pro Regular;
+  font-size: clamp(14px, 2vw, 22px);
+  font-style: normal;
+  line-height: normal;
+}
+
+/* Css for grupper wrapper siden  */
+
+.grupper-page-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.grupper-page-wrapper {
+  width: 100%;
+  max-width: 1850px;
+  flex-shrink: 0;
+}
+
+.grupper-page-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  padding: 50px 35px;
+}
+
+.grupper-page-info h1 {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(25px, 3vw, 60px);
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.grupper-page-info p {
+  max-width: 686px;
+  color: #fff;
+  text-align: right;
+  font-family: SF-Pro Regular;
+  font-size: clamp(14px, 2vw, 22px);
+  font-style: normal;
+  line-height: normal;
+}
+
+.gruppe-page-flex {
+  padding: 25px;
+}
+
+.gruppe-page-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 25px;
+}
+
+.gruppe-box {
+  padding: 100px 0;
+}
+
+.gruppe-box img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.gruppe-box hr {
+  opacity: 25%;
+}
+
+.title-gruppe-page {
+  font-family: SF-Pro light;
+  text-transform: uppercase;
+  font-size: calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125);
+  color: #fff;
+}
+
+.button-gruppe-page {
+  border: none;
+  background: #2c2c2c;
+  padding: 20px 40px;
+  font-family: SF-Pro Regular;
+  font-size: clamp(14px, 2vw, 18px);
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.tjeneste-kurs-kal {
+  background-image: url(kalender-images/Group\ 64.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.kontakt-container {
+  padding: 50px 0;
+}
+.kontakt-header {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(30px, 5vw, 65px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 869px;
+  padding: 0 50px;
+}
+.kontakt-flex {
+  display: flex;
+  padding: 50px 50px;
+}
+
+.kontakt-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 1316px;
+}
+
+.kontakt-box {
+  border-top: 1.5px solid #28292d;
+  max-width: 100%;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  margin: 5% 0;
+}
+
+.kontakt-name h1 {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(15px, 5vw, 45px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.kontakt-name h2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: SF-Pro Regular;
+  font-size: clamp(15px, 2vw, 25px);
+  font-weight: 400;
+  line-height: normal;
+}
+
+.kontakt-box p {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(15px, 3vw, 35px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.socials-info {
+  padding: 25px 0;
+}
+
+.business-info h1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: SF-Pro Regular;
+  font-size: clamp(15px, 5vw, 25px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.socials-info h1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: SF-Pro Regular;
+  font-size: clamp(15px, 5vw, 25px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.business-info,
+.socials-info p {
+  color: #fff;
+  font-family: SF-Pro Regular;
+  font-size: clamp(15px, 5vw, 25px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.socials-info a {
+  text-decoration: none;
+}
+
+.tjeneste-kal-img {
+  background-image: url(kalender-images/Tjenestekurs-kal-img.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  color: #333 !important;
+}
+
+.bible-kal-img {
+  background-image: url(kalender-images/bible-kal-img.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.bønn-kal-img {
+  background-image: url(kalender-images/bonn-kal-img.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.connect-kal-img {
+  background-image: url(kalender-images/connect-kal-img.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.evan-kal-img {
+  background-image: url(kalender-images/evangelisering-kal-img.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  color: #333 !important;
+}
+
+.james-kal-img {
+  background-image: url(kalender-images/james-kal-img.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  color: #333 !important;
+}
+
+.lordag-kal-img {
+  background-image: url(kalender-images/lordag-kal-img.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.son-kal-img {
+  background-image: url(kalender-images/sondag-kal-img.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.påske-kal-img {
+  background-image: url(kalender-images/paskekonf-kal-img.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.femårs-kal-img {
+  background-image: url(kalender-images/5ars-kal-img.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+@media screen and (max-width: 1280px) {
+  .kontakt-flex,
+  .kontakt-header {
+    padding: 25px 25px !important;
+  }
+  .kontakt-wrapper {
+    flex-direction: column;
+  }
+
+  .kontakt-side-details {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer-info-one {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .socials-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .location-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .contact-us p {
+    margin-top: -5%;
+    font-size: clamp(12px, 2vw, 20px);
+  }
+
+  .location-wrapper p {
+    margin-top: -2%;
+    font-size: clamp(12px, 2vw, 20px);
+  }
+
+  .gruppe-page-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 10px 25px;
+  }
+
+  .nav img {
+    max-width: 125px;
+    width: 100%;
+  }
+
+  .res-menu-logo {
+    padding: 25px 0;
+    max-width: 125px;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-res-button {
+    display: block;
+  }
+
+  .nav-text-wrapper p {
+    font-size: 10px;
+  }
+
+  .omOss-big-tekst h1 {
+    font-size: clamp(50px, 10vw, 100px);
+    padding: 15px 0;
+  }
+
+  .omOss-big-tekst h2 {
+    font-size: clamp(50px, 10vw, 100px);
+    padding: 15px 0;
+  }
+
+  .omOss-text p {
+    text-align: left;
+    padding: 25px 0;
+    width: min(max(350px, 100%), 600px);
+  }
+
+  .vaar-tro-text {
+    text-align: left;
+  }
+
+  .vaar-tro-text p {
+    text-align: left;
+  }
+
+  .klik-grupper-flex {
+    padding: 55px 0;
+  }
+
+  .klik-grupper-wrapper {
+    padding: 20px;
+  }
+
+  .klik-grupper-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .tjenester-wrapper {
+    width: 100%;
+    max-width: 628px;
+    padding: 100px 25px;
+  }
+
+  .tjenester-links {
+    gap: 10px;
+  }
+
+  .tjenester-page-info {
+    flex-direction: column;
+    padding: 10px 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .tjenester-page-info p {
+    text-align: left;
+  }
+
+  .button-wrapper-tjenester {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .box-reveal-grupper {
+    height: 100vh;
+    padding: 1.5em;
+  }
+
+  .box-titles {
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .grupper-page-info {
+    flex-direction: column;
+    padding: 10px 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .grupper-page-info p {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .gruppe-page-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .gruppe-box {
+    padding: 50px 0;
+  }
+
+  .youtube-flex {
+    padding: 100px 0;
+  }
+
+  .youtube-wrapper {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .youtube-wrapper button {
+    width: 100px;
+    height: 42px;
+    font-size: 12px;
+  }
+
+  .months p {
+    width: 70px;
+    /* Adjust the width as needed for smaller screens */
+    height: 70px;
+    /* Adjust the height as needed for smaller screens */
+  }
+
+  .pagination-kalender {
+    justify-content: flex-start;
+  }
+
+  .event-info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .event-img-container {
+    padding: 25px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav h1 {
+    font-size: 40px;
+  }
+
+  .res-menu-nav h1 {
+    font-size: 40px;
+  }
+
+  .nav-text-wrapper {
+    height: 400px;
+  }
+
+  .footer-info-two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .location-wrapper {
+    align-items: flex-start;
+  }
+
+  .months p {
+    width: 50px;
+    height: 50px;
+  }
+
+  .kontakt-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .inv-img-grupper {
+    display: none;
+  }
+
+  .klik-grupper-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nav-text-wrapper p {
+    font-size: 8px;
+  }
+}
