@@ -237,8 +237,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 25px 50px;
-  position: sticky;
-  top: 0;
 }
 
 .nav img {
