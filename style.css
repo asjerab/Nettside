@@ -237,6 +237,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 25px 50px;
+  position: sticky;
+  top: 0;
 }
 
 .nav img {
@@ -379,7 +381,6 @@ nav {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-transform: uppercase;
   max-width: 850px;
   text-wrap: balance;
 }
@@ -390,11 +391,11 @@ nav {
 
 .nav-text-wrapper button {
   display: flex;
-  padding: 17px 25px;
+  padding: 10px 15px;
   justify-content: center;
   align-items: center;
-  border: none;
-  background-color: #2c2c2c;
+  border: 1px solid #fff;
+  background-color: transparent;
   color: #fff;
   font-family: SF-Pro Regular;
   border-radius: 4px;
@@ -671,14 +672,14 @@ nav {
 }
 
 .klik-grupper-info button {
-  padding: 20px 30px;
-  background-color: #2c2c2c;
+  padding: 15px 25px;
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: #a5a5a5;
   font-family: SF-Pro Regular;
   cursor: pointer;
   font-size: clamp(14px, 2vw, 16px);
@@ -1181,14 +1182,14 @@ nav {
 }
 
 .button-wrapper-tjenester button {
-  padding: 20px 30px;
-  background-color: #2c2c2c;
+  padding: 15px 25px;
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: #a5a5a5;
   font-family: SF-Pro Regular;
   cursor: pointer;
   font-size: clamp(14px, 2vw, 16px);
