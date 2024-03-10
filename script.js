@@ -307,6 +307,21 @@ document.addEventListener("DOMContentLoaded", function () {
   // ///////////////////////////////////////////////////////////////////////////////////////////////////////
   // ///////////////////////////////////////////////////////////////////////////////////////////////////////
   // ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Show loader
+    document.getElementById("loaderContainer").style.display = "flex";
+
+    // Additional 5 seconds timeout
+    setTimeout(function () {
+      // Hide loader after content is loaded and 5 seconds have passed
+      document.getElementById("loaderContainer").style.display = "none";
+    }, 1000);
+  });
+  
+
+  
+
   
   function toggleBars() {
     const bars = document.querySelector(".bars");
