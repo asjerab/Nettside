@@ -20,7 +20,6 @@
   src: url("fonts/SF-Pro-Display-Light.otf");
 }
 
-
 /*/////////////////////////////////////*/
 /*/////////////////////////////////////*/
 
@@ -711,11 +710,11 @@ nav {
 }
 
 .klik-grupper-info button {
-  background-color: #ffffff;
+  background-color: #333;
   padding: 17px 25px;
   border: none;
-  color: #333;
-  font-family: SF-Pro Bold;
+  color: #fff;
+  font-family: SF-Pro Regular;
   cursor: pointer;
   border-radius: 4px;
   transition: all 200ms ease-in-out;
@@ -774,12 +773,6 @@ nav {
   line-height: normal;
 }
 
-.box-titles i {
-  color: #333;
-  font-size: clamp(20px, 5vw, 30px);
-  cursor: pointer;
-}
-
 .box-reveal-grupper button {
   padding: 20px 30px;
   border-radius: 4px;
@@ -795,6 +788,31 @@ nav {
 .box-reveal-grupper a {
   text-decoration: none;
   color: #fff;
+}
+
+.close-button-grupper {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.close-grupper-bar-one, .close-grupper-bar-two {
+  position: absolute;
+  width: 65%;
+  height: 2px; 
+  background-color: black;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50px;
+}
+
+.close-grupper-bar-one {
+  transform: rotate(45deg);
+}
+
+.close-grupper-bar-two {
+  transform: rotate(-45deg);
 }
 
 /*/////////////////////////////////////*/
@@ -1220,14 +1238,15 @@ nav {
 }
 
 .button-wrapper-tjenester button {
-  background-color: #ffffff;
+  background-color: #333;
   padding: 17px 25px;
   border: none;
-  color: #333;
-  font-family: SF-Pro Bold;
+  color: #fff;
+  font-family: SF-Pro Regular;
   cursor: pointer;
   border-radius: 4px;
   transition: all 200ms ease-in-out;
+  word-spacing: 2px;
 }
 
 .button-wrapper-tjenester button:hover {

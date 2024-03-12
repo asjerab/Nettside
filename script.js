@@ -305,8 +305,6 @@ document.addEventListener("DOMContentLoaded", function () {
   
   // ///////////////////////////////////////////////////////////////////////////////////////////////////////
   // ///////////////////////////////////////////////////////////////////////////////////////////////////////
-  // ///////////////////////////////////////////////////////////////////////////////////////////////////////
-  // ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
   document.addEventListener("DOMContentLoaded", function () {
     // Show loader
@@ -318,10 +316,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("loaderContainer").style.display = "none";
     }, 1000);
   });
-  
-
-  
-
   
   function toggleBars() {
     const bars = document.querySelector(".bars");
@@ -374,237 +368,34 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
   
-  // Get references to the elements
-  const openButton = document.getElementById("openButton");
-  const closeButton = document.getElementById("closeButton");
-  const myDiv = document.getElementById("myDiv");
+  function setupButtons(openButtonId, closeButtonId, divId) {
+    const openButton = document.getElementById(openButtonId);
+    const closeButton = document.getElementById(closeButtonId);
+    const myDiv = document.getElementById(divId);
   
-  // Function to open the div
-  function openDiv() {
-    myDiv.style.display = "block";
+    function openDiv() {
+      myDiv.style.display = "block";
+    }
+  
+    function closeDiv() {
+      myDiv.style.display = "none";
+    }
+  
+    openButton.addEventListener("click", openDiv);
+    closeButton.addEventListener("click", closeDiv);
+    document.addEventListener("DOMContentLoaded", closeDiv);
   }
   
-  // Function to close the div
-  function closeDiv() {
-    myDiv.style.display = "none";
-  }
+  // Call the setup function for each set of elements
+  setupButtons("openButton", "closeButton", "myDiv");
+  setupButtons("openButton2", "closeButton2", "myDiv2");
+  setupButtons("openButton3", "closeButton3", "myDiv3");
+  setupButtons("openButton4", "closeButton4", "myDiv4");
+  setupButtons("openButton5", "closeButton5", "myDiv5");
+  setupButtons("openButton6", "closeButton6", "myDiv6");
+  setupButtons("openButton7", "closeButton7", "myDiv7");
+  setupButtons("openButton8", "closeButton8", "myDiv8");
+  setupButtons("openButton9", "closeButton9", "myDiv9");
   
-  // Event listener for opening the div
-  openButton.addEventListener("click", openDiv);
-  
-  // Event listener for closing the div
-  closeButton.addEventListener("click", closeDiv);
-  
-  // Hide the div on page load
-  document.addEventListener("DOMContentLoaded", function () {
-    closeDiv();
-  });
-  
-  // Get references to the elements for HTML 2
-  const openButton2 = document.getElementById("openButton2");
-  const closeButton2 = document.getElementById("closeButton2");
-  const myDiv2 = document.getElementById("myDiv2");
-  
-  // Function to open the div for HTML 2
-  function openDiv2() {
-    myDiv2.style.display = "block";
-  }
-  
-  // Function to close the div for HTML 2
-  function closeDiv2() {
-    myDiv2.style.display = "none";
-  }
-  
-  // Event listener for opening the div for HTML 2
-  openButton2.addEventListener("click", openDiv2);
-  
-  // Event listener for closing the div for HTML 2
-  closeButton2.addEventListener("click", closeDiv2);
-  
-  // Hide the div on page load for HTML 2
-  document.addEventListener("DOMContentLoaded", function () {
-    closeDiv2();
-  });
-  
-  // Get references to the elements for HTML 3
-  const openButton3 = document.getElementById("openButton3");
-  const closeButton3 = document.getElementById("closeButton3");
-  const myDiv3 = document.getElementById("myDiv3");
-  
-  // Function to open the div for HTML 3
-  function openDiv3() {
-    myDiv3.style.display = "block";
-  }
-  
-  // Function to close the div for HTML 3
-  function closeDiv3() {
-    myDiv3.style.display = "none";
-  }
-  
-  // Event listener for opening the div for HTML 3
-  openButton3.addEventListener("click", openDiv3);
-  
-  // Event listener for closing the div for HTML 3
-  closeButton3.addEventListener("click", closeDiv3);
-  
-  // Hide the div on page load for HTML 3
-  document.addEventListener("DOMContentLoaded", function () {
-    closeDiv3();
-  });
-  
-  // Get references to the elements for HTML 4
-  const openButton4 = document.getElementById("openButton4");
-  const closeButton4 = document.getElementById("closeButton4");
-  const myDiv4 = document.getElementById("myDiv4");
-  
-  // Function to open the div for HTML 4
-  function openDiv4() {
-    myDiv4.style.display = "block";
-  }
-  
-  // Function to close the div for HTML 4
-  function closeDiv4() {
-    myDiv4.style.display = "none";
-  }
-  
-  // Event listener for opening the div for HTML 4
-  openButton4.addEventListener("click", openDiv4);
-  
-  // Event listener for closing the div for HTML 4
-  closeButton4.addEventListener("click", closeDiv4);
-  
-  // Hide the div on page load for HTML 4
-  document.addEventListener("DOMContentLoaded", function () {
-    closeDiv4();
-  });
-  
-  // Get references to the elements for HTML 5
-  const openButton5 = document.getElementById("openButton5");
-  const closeButton5 = document.getElementById("closeButton5");
-  const myDiv5 = document.getElementById("myDiv5");
-  
-  // Function to open the div for HTML 5
-  function openDiv5() {
-    myDiv5.style.display = "block";
-  }
-  
-  // Function to close the div for HTML 5
-  function closeDiv5() {
-    myDiv5.style.display = "none";
-  }
-  
-  // Event listener for opening the div for HTML 5
-  openButton5.addEventListener("click", openDiv5);
-  
-  // Event listener for closing the div for HTML 5
-  closeButton5.addEventListener("click", closeDiv5);
-  
-  // Hide the div on page load for HTML 5
-  document.addEventListener("DOMContentLoaded", function () {
-    closeDiv5();
-  });
-  
-  // Get references to the elements for HTML 6
-  const openButton6 = document.getElementById("openButton6");
-  const closeButton6 = document.getElementById("closeButton6");
-  const myDiv6 = document.getElementById("myDiv6");
-  
-  // Function to open the div for HTML 6
-  function openDiv6() {
-    myDiv6.style.display = "block";
-  }
-  
-  // Function to close the div for HTML 6
-  function closeDiv6() {
-    myDiv6.style.display = "none";
-  }
-  
-  // Event listener for opening the div for HTML 6
-  openButton6.addEventListener("click", openDiv6);
-  
-  // Event listener for closing the div for HTML 6
-  closeButton6.addEventListener("click", closeDiv6);
-  
-  // Hide the div on page load for HTML 6
-  document.addEventListener("DOMContentLoaded", function () {
-    closeDiv6();
-  });
-  
-  // Get references to the elements for HTML 7
-  const openButton7 = document.getElementById("openButton7");
-  const closeButton7 = document.getElementById("closeButton7");
-  const myDiv7 = document.getElementById("myDiv7");
-  
-  // Function to open the div for HTML 7
-  function openDiv7() {
-    myDiv7.style.display = "block";
-  }
-  
-  // Function to close the div for HTML 7
-  function closeDiv7() {
-    myDiv7.style.display = "none";
-  }
-  
-  // Event listener for opening the div for HTML 7
-  openButton7.addEventListener("click", openDiv7);
-  
-  // Event listener for closing the div for HTML 7
-  closeButton7.addEventListener("click", closeDiv7);
-  
-  // Hide the div on page load for HTML 7
-  document.addEventListener("DOMContentLoaded", function () {
-    closeDiv7();
-  });
-  
-  // Get references to the elements for HTML 8
-  const openButton8 = document.getElementById("openButton8");
-  const closeButton8 = document.getElementById("closeButton8");
-  const myDiv8 = document.getElementById("myDiv8");
-  
-  // Function to open the div for HTML 8
-  function openDiv8() {
-    myDiv8.style.display = "block";
-  }
-  
-  // Function to close the div for HTML 8
-  function closeDiv8() {
-    myDiv8.style.display = "none";
-  }
-  
-  // Event listener for opening the div for HTML 8
-  openButton8.addEventListener("click", openDiv8);
-  
-  // Event listener for closing the div for HTML 8
-  closeButton8.addEventListener("click", closeDiv8);
-  
-  // Hide the div on page load for HTML 8
-  document.addEventListener("DOMContentLoaded", function () {
-    closeDiv8();
-  });
-  
-  // Get references to the elements for HTML 9
-  const openButton9 = document.getElementById("openButton9");
-  const closeButton9 = document.getElementById("closeButton9");
-  const myDiv9 = document.getElementById("myDiv9");
-  
-  // Function to open the div for HTML 9
-  function openDiv9() {
-    myDiv9.style.display = "block";
-  }
-  
-  // Function to close the div for HTML 9
-  function closeDiv9() {
-    myDiv9.style.display = "none";
-  }
-  
-  // Event listener for opening the div for HTML 9
-  openButton9.addEventListener("click", openDiv9);
-  
-  // Event listener for closing the div for HTML 9
-  closeButton9.addEventListener("click", closeDiv9);
-  
-  // Hide the div on page load for HTML 9
-  document.addEventListener("DOMContentLoaded", function () {
-    closeDiv9();
-  });
